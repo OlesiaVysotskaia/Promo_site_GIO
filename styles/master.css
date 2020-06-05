@@ -1,1 +1,256 @@
 @import "reset.css";
+
+body {
+  background-color: black;
+}
+
+h1, h2, a, p, li {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-size: 64px;
+  font-family: 'Roboto', sans-serif;
+  width: 1042px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+p {
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+  width: 810px;
+}
+a {
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+nav a {
+  font-size: 36px;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 787px;
+  margin-bottom: 68px;
+  position: fixed;
+  background-color: black;
+}
+
+.navigation {
+  height: 80px;
+  width: 1440px;
+  margin-bottom: 45px;
+  background-color: black;
+}
+
+a {
+  color: #63FF49;
+}
+
+a:hover {
+  color: #FF49A0;
+}
+
+.link_none:hover, .link_footer:hover {
+  color: #FF49A0;
+}
+
+hr {
+  border: none;
+  width: 100vw;
+  background-color: #63FF49;
+  height: 3px;
+}
+
+.news {
+  font-size: 36px;
+  width: 100%;
+  color: #63FF49;
+  cursor: pointer;
+}
+
+.news_line {
+  margin-bottom: 72px;
+}
+
+.news_line_second {
+  margin-bottom: 60px;
+}
+
+.first {
+  margin-bottom: 220px;
+}
+.second {
+  margin-bottom: 220px;
+}
+
+.content {
+  position: absolute;
+  top: 24px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.block {
+  margin-left: 20px;
+}
+
+.big_title {
+  margin-bottom: 315px;
+}
+
+.serv_title {
+  font-size: 48px;
+  margin-bottom: 60px;
+}
+
+.link_html {
+  font-size: 48px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.link_none {
+  font-size: 48px;
+  margin-bottom: 50px;
+  color: white;
+  cursor: pointer;
+}
+
+footer {
+  width: 827px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  margin-top: 120px;
+}
+
+.link_footer {
+  color: #63FF49;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.descr {
+  margin-top: 30px;
+}
+
+.link_html:hover {
+  color: #FF49A0;
+}
+
+.section {
+  margin-bottom: 68px
+}
+
+.tower {
+  position: absolute;
+  top: 0;
+  right: -20px;
+  z-index: 99;
+}
+
+/* ПЛАКАТЫ */
+
+.first-posters {
+  margin-bottom: 66px;
+}
+
+.posters {
+  margin-left: 20px;
+  width: 1380px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.posters_title, .posters_descr {
+  font-size: 48px;
+  width: 1200px;
+}
+
+/* .posters_title {
+  margin-bottom: 32px;
+} */
+
+.title {
+  margin-bottom: 32px;
+}
+
+.history_descr {
+  margin-bottom: 135px;
+}
+
+.first-history {
+  margin-bottom: 396px;
+}
+
+.second-history {
+  margin-bottom: 764px;
+}
+
+.third-history {
+  margin-bottom: 154px;
+}
+
+.forth-history {
+  margin-bottom: 140px;
+}
+
+.fifth-history {
+  margin-bottom: 640px;
+}
+
+.history_text {
+  margin-bottom: 60px;
+}
+
+.poster_descr {
+  margin-top: 16px;
+  font-size: 36px;
+}
+
+.poster_img:hover {
+  border: 1px solid white;
+}
+
+.poster_descr {
+  width: 335px;
+}
+
+.mission_descr {
+  margin-bottom: 66px;
+}
+
+.first-mission {
+  margin-bottom: 155px;
+}
+
+.second-mission {
+  margin-bottom: 280px;
+}
+
+.third-mission {
+  margin-bottom: 560px;
+}
+
+.forth-mission {
+  margin-bottom: 100px;
+}
+
+.fifth-mission {
+  margin-bottom: 501px;
+}
