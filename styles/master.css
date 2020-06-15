@@ -15,7 +15,6 @@ h1, h2, a, p, li {
   color: white;
   font-family: 'Roboto', sans-serif;
 }
-
 h1 {
   font-size: 64px;
   font-family: 'Roboto', sans-serif;
@@ -49,7 +48,7 @@ nav a.is-active {
   color: #FF49A0;
 }
 
-nav {
+.nav {
   display: flex;
   justify-content: space-between;
   width: 787px;
@@ -605,7 +604,7 @@ div.fifth-mission :first-child {
   nav a {
     font-size: 48px;
   }
-  nav {
+  .nav {
     width: 900px;
     margin-left: 40px;
   }
@@ -684,7 +683,7 @@ div.fifth-mission :first-child {
     font-size: 24px;
   }
 
-  nav {
+  .nav {
     width: 470px;
   }
 
@@ -771,12 +770,10 @@ div.fifth-mission :first-child {
 
 @media (max-width: 767px) {
   .content {
-    top: 40px;
+    top: 140px;
   }
   .navigation {
-    /* display: none; */
-    height: 100px;
-    /* height: 240px; */
+    height: 135px;
   }
   .nav_mobile {
     margin-left: 20px;
@@ -784,13 +781,30 @@ div.fifth-mission :first-child {
   }
   .nav_mobile-back {
     display: none;
+    position: fixed;
+    z-index: 99;
     margin-left: 20px;
     margin-top: 30px;
   }
-  nav {
+  .nav-back-block {
+    height: 90px;
+    width: 100%;
     display: none;
-    height: 0px;
+    background-color: #63FF49;
+    position: fixed;
+    z-index: 99;
+  }
+  .nav {
+    display: none;
+    position: fixed;
+    z-index: 88;
+    height: 135px;
+    top: -100px;
+    width: 150px;
     flex-direction: column;
-    /* height: 135px; */
+    background-color: #63FF49;
+  }
+  .int {
+    color: black;
   }
 }

@@ -10,35 +10,35 @@ mobile_menu
 })
 .add({
   targets: '.content',
-  top: ['40px','180px'],
-})
+  duration: 400,
+  top: ['140px','245px'],
+  easing: 'easeOutBack',
+}, 1200)
 .add({
   begin: function () {
     document.querySelector('body').style.backgroundColor = '#63FF49'}
-})
+}, 1200)
 .add({
   begin: function () {
     document.querySelector('.navigation').style.backgroundColor = '#63FF49'}
-})
-.add({
-  begin: function () {
-    document.querySelector('h2').style.color = 'black'}
-})
+}, 1200)
 .add({
   begin: function () {
     document.querySelector('.nav_mobile-back').style.display = 'block'}
-})
+}, 1300)
 .add({
-  targets: 'nav',
   begin: function () {
-    document.querySelector('nav').style.display = 'block'},
-  begin: function () {
-    document.querySelector('nav').style.backgroundColor = '#63FF49'}
-})
+    document.querySelector('.nav-back-block').style.display = 'block'}
+}, 1300)
 .add({
-  targets: 'nav',
-  height: [ '0px', '135px']
-})
+  begin: function () {
+    document.querySelector('.nav').style.display = 'flex'}
+}, 1400)
+.add({
+  targets: '.nav',
+  top: ['-100px','70px'],
+  easing: 'easeOutBack',
+}, 1400)
 
 
 let mobile_menuPlay =
