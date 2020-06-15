@@ -1,7 +1,14 @@
 @import "reset.css";
+* {
+  transition: all 300ms ease;
+}
 
 body {
   background-color: black;
+}
+
+.int {
+  color: #63FF49;
 }
 
 h1, h2, a, p, li {
@@ -12,7 +19,7 @@ h1, h2, a, p, li {
 h1 {
   font-size: 64px;
   font-family: 'Roboto', sans-serif;
-  width: 1042px;
+  /* width: 1042px; */
 }
 
 h2 {
@@ -38,19 +45,26 @@ nav a {
   font-family: 'Roboto', sans-serif;
 }
 
+nav a.is-active {
+  color: #FF49A0;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
   width: 787px;
-  margin-bottom: 68px;
   position: fixed;
+  margin-bottom: 45px;
+  margin-top: 24px;
+  margin-left: 20px;
   background-color: black;
 }
 
 .navigation {
   height: 80px;
+  z-index: 99;
   width: 1440px;
-  margin-bottom: 45px;
+  position: fixed;
   background-color: black;
 }
 
@@ -81,7 +95,11 @@ hr {
 }
 
 .news_line {
+  position: relative;
   margin-bottom: 72px;
+  background-color: black;
+  z-index: 101;
+  width: 100%;
 }
 
 .news_line_second {
@@ -97,13 +115,14 @@ hr {
 
 .content {
   position: absolute;
-  top: 24px;
+  top: 120px;
   overflow: hidden;
   width: 100%;
 }
 
 .block {
   margin-left: 20px;
+  width: 1165px;
 }
 
 .big_title {
@@ -117,7 +136,7 @@ hr {
 
 .link_html {
   font-size: 48px;
-  color: white;
+  /* color: white; */
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
   cursor: pointer;
@@ -126,7 +145,7 @@ hr {
 .link_none {
   font-size: 48px;
   margin-bottom: 50px;
-  color: white;
+  /* color: white; */
   cursor: pointer;
 }
 
@@ -134,8 +153,9 @@ footer {
   width: 827px;
   display: flex;
   justify-content: space-around;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   margin-top: 120px;
+  margin-left: 5px;
 }
 
 .link_footer {
@@ -159,8 +179,43 @@ footer {
 .tower {
   position: absolute;
   top: 0;
-  right: -20px;
-  z-index: 99;
+  right: 0;
+  z-index: 100;
+}
+
+
+.planets {
+  position: absolute;
+  top: 380px;
+  right: 0;
+  z-index: 100;
+}
+
+
+.pluto {
+  position: absolute;
+  top: 286px;
+  right: 0;
+  z-index: 88;
+}
+.alien-hands {
+  position: absolute;
+  top: 997px;
+  left: -10px;
+  z-index: 88;
+}
+.president {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 88;
+}
+
+.book {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ПЛАКАТЫ */
@@ -169,17 +224,42 @@ footer {
   margin-bottom: 66px;
 }
 
+.poster_section {
+  margin-bottom: 50px;
+}
+
 .posters {
   margin-left: 20px;
   width: 1400px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .posters_title, .posters_descr {
   font-size: 48px;
   width: 1200px;
+}
+
+.poster_img {
+  position: relative;
+  opacity: 100;
+  z-index: 77;
+}
+
+.poster {
+  background-color: black;
+  position: relative;
+}
+
+.img_desc {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  color: black;
+  width: 300px;
+  display: none;
 }
 
 /* .posters_title {
@@ -192,6 +272,7 @@ footer {
 
 .history_descr {
   margin-bottom: 135px;
+  /* width: 1165px; */
 }
 
 .first-history {
@@ -221,18 +302,16 @@ footer {
 .poster_descr {
   margin-top: 16px;
   font-size: 36px;
+  width: 335px;
 }
 
 .poster_img:hover {
   border: 1px solid white;
 }
 
-.poster_descr {
-  width: 335px;
-}
-
 .mission_descr {
   margin-bottom: 66px;
+  width: 1165px;
 }
 
 .first-mission {
@@ -252,5 +331,466 @@ footer {
 }
 
 .fifth-mission {
-  margin-bottom: 501px;
+  /* margin-bottom: 501px; */
+}
+
+div.fifth-mission :first-child {
+  margin-bottom: 65px;
+}
+/*
+КАРТИНКИ */
+
+#index-letter-title-1 {
+  position: absolute;
+  z-index: 88;
+  top: 140px;
+  left: 20px;
+}
+#index-letter-title-2 {
+  position: absolute;
+  z-index: 88;
+  top: 340px;
+  left: 20px;
+}
+
+#index-letter-desc-1 {
+  position: absolute;
+  z-index: 88;
+  top: 790px;
+  left: 84px;
+}
+
+#index-letter-desc-2 {
+  position: absolute;
+  z-index: 88;
+  top: 825px;
+  left: 414px;
+}
+
+#index-letter-history-1 {
+  position: absolute;
+  z-index: 88;
+  top: 1320px;
+  left: 104px;
+}
+
+#index-letter-history-2 {
+  position: absolute;
+  z-index: 88;
+  top: 1287px;
+  left: 395px;
+}
+
+#index-letter-poster-1 {
+  position: absolute;
+  z-index: 88;
+  top: 1488px;
+  left: 154px;
+}
+
+#index-letter-poster-2 {
+  position: absolute;
+  z-index: 88;
+  top: 1503px;
+  left: 314px;
+}
+
+#index-letter-mission {
+  position: absolute;
+  z-index: 88;
+  top: 1681px;
+  left: 189px;
+}
+
+#index-letter-adaptation {
+  position: absolute;
+  z-index: 88;
+  top: 2372px;
+  left: 140px;
+}
+
+#index-letter-adaptation {
+  position: absolute;
+  z-index: 88;
+  top: 2372px;
+  left: 140px;
+}
+
+
+
+
+#history-letter-title-1 {
+  position: absolute;
+  z-index: 88;
+  top: 197px;
+  left: 25px;
+}
+
+#history-letter-title-2 {
+  position: absolute;
+  z-index: 88;
+  top: 320px;
+  left: 650px;
+}
+
+#history-letter-title-3 {
+  position: absolute;
+  z-index: 88;
+  top: 1790px;
+  left: 292px;
+}
+
+#history-letter-title-4 {
+  position: absolute;
+  z-index: 88;
+  top: 2385px;
+  left: 204px;
+}
+
+#history-letter-title-5 {
+  position: absolute;
+  z-index: 88;
+  top: 2668px;
+  left: 26px;
+}
+
+#history-letter-desc-1 {
+  position: absolute;
+  z-index: 88;
+  top: 596px;
+  left: 154px;
+}
+#history-letter-desc-2 {
+  position: absolute;
+  z-index: 88;
+  top: 596px;
+  left: 407px;
+}
+#history-letter-desc-3 {
+  position: absolute;
+  z-index: 88;
+  top: 2100px;
+  left: 250px;
+}
+#history-letter-desc-4 {
+  position: absolute;
+  z-index: 88;
+  top: 2119px;
+  left: 356px;
+}
+
+
+
+
+#mission-letter-title-1 {
+  position: absolute;
+  z-index: 88;
+  top: 83px;
+  left: 500px;
+}
+
+#mission-letter-title-2 {
+  position: absolute;
+  z-index: 88;
+  top: 639px;
+  left: 314px;
+}
+
+#mission-letter-title-3 {
+  position: absolute;
+  z-index: 88;
+  top: 1220px;
+  left: 190px;
+}
+
+#mission-letter-title-4 {
+  position: absolute;
+  z-index: 88;
+  top: 1837px;
+  left: 108px;
+}
+
+
+#mission-letter-desc-1 {
+  position: absolute;
+  z-index: 88;
+  top: 320px;
+  left: 257px;
+}
+
+#mission-letter-desc-2 {
+  position: absolute;
+  z-index: 88;
+  top: 350px;
+  left: 170px;
+}
+
+
+
+@media (max-width: 1365px) {
+  .tower {
+    width: 75vw;
+  }
+  .block {
+    width: 1140px;
+  }
+  .big_title {
+    margin-bottom: 230px;
+  }
+  .fifth-history {
+    margin-bottom: 532px;
+  }
+
+
+  .posters {
+    width: 1240px;
+  }
+  .poster_img {
+    width: 23vw;
+  }
+  .poster_section {
+    width: 23vw;
+  }
+  .poster_descr {
+    font-size: 24px;
+    width: 230px;
+  }
+
+
+  .first-mission {
+    margin-bottom: 70px;
+  }
+  footer
+}
+
+@media (max-width: 1439px) {
+  .tower {
+    width: 75vw;
+  }
+  .block {
+    width: 1140px;
+  }
+  .big_title {
+    margin-bottom: 200px;
+  }
+  .fifth-history {
+    margin-bottom: 532px;
+  }
+
+
+  .posters {
+    width: 1340px;
+  }
+  .poster_img {
+    width: 23vw;
+  }
+  .poster_section {
+    width: 23vw;
+  }
+  .poster_descr {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1679px) {
+
+  h1 {
+    font-size: 96px;
+    font-family: 'Roboto', sans-serif;
+  }
+  p {
+    font-size: 36px;
+    width: 1150px;
+  }
+  nav a {
+    font-size: 48px;
+  }
+  nav {
+    width: 900px;
+    margin-left: 40px;
+  }
+  .block {
+    margin-left: 40px;
+    width: 1530px;
+  }
+  .big_title {
+    margin-bottom: 260px;
+  }
+  .link_html {
+    font-size: 64px;
+  }
+  .serv_title {
+    font-size: 64px;
+    margin-bottom: 60px;
+  }
+  .link_none {
+    font-size: 64px;
+  }
+  .news {
+    font-size: 48px;
+  }
+  footer {
+    width: 1320px;
+    margin-left: 15px;
+  }
+  .link_footer {
+    font-size: 36px;
+  }
+
+
+  .posters {
+    margin-left: 40px;
+    width: 1600px;
+  }
+  .poster_img {
+    width: 23vw;
+  }
+  .poster_section {
+    width: 23vw;
+  }
+
+
+  .history_descr {
+    margin-bottom: 190px;
+  }
+  .first {
+    margin-bottom: 270px;
+  }
+  .second-history {
+    margin-bottom: 565px;
+  }
+  .forth-history {
+    margin-bottom: 230px;
+  }
+
+}
+
+@media (max-width: 1023px) {
+  h1 {
+    font-size: 36px;
+  }
+  .poster_descr {
+    width: 335px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 24px;
+    width: 600px;
+  }
+  a {
+    font-size: 24px;
+  }
+
+  nav {
+    width: 470px;
+  }
+
+  nav a {
+    font-size: 24px;
+  }
+  .block {
+    width: 600px;
+  }
+  .big_title {
+    margin-bottom: 210px;
+  }
+  .first {
+    margin-bottom: 80px;
+  }
+  .second {
+    margin-bottom: 250px;
+  }
+  .descr {
+    margin-top: 10px;
+  }
+  .news {
+    font-size: 24px;
+  }
+  .news_line {
+    margin-bottom: 90px;
+  }
+  .serv_title {
+    font-size: 36px;
+  }
+
+  .link_html {
+    font-size: 36px;
+  }
+
+  .link_none {
+    font-size: 36px;
+  }
+  footer {
+    width: 730px;
+  }
+  .link_footer {
+    font-size: 18px;
+  }
+  .posters {
+    width: 730px;
+  }
+  .poster_section {
+    width: 30vw;
+  }
+  .poster_img {
+    width: 30vw;
+  }
+  .posters_title, .posters_descr {
+    font-size: 30px;
+    width: 600px;
+  }
+  .poster_descr {
+    font-size: 24px;
+    width: 190px;
+  }
+
+
+  .history_descr {
+    margin-bottom: 150px;
+  }
+  .first-history {
+    margin-bottom: 370px;
+  }
+  .third-history {
+    margin-bottom: 100px;
+  }
+
+  .first-mission {
+    margin-bottom: 200px;
+  }
+  .second-mission {
+    margin-bottom: 315px;
+  }
+  .third-mission {
+    margin-bottom: 515px;
+  }
+}
+
+@media (max-width: 767px) {
+  .content {
+    top: 40px;
+  }
+  .navigation {
+    /* display: none; */
+    height: 100px;
+    /* height: 240px; */
+  }
+  .nav_mobile {
+    margin-left: 20px;
+    margin-top: 30px;
+  }
+  .nav_mobile-back {
+    display: none;
+    margin-left: 20px;
+    margin-top: 30px;
+  }
+  nav {
+    display: none;
+    height: 0px;
+    flex-direction: column;
+    /* height: 135px; */
+  }
 }
