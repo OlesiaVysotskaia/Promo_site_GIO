@@ -12,7 +12,7 @@ if (window.matchMedia("(max-width: 767px)").matches) {
   .add({
     targets: '.content',
     duration: 400,
-    top: ['110px','245px'],
+    top: ['110px','265px'],
     easing: 'easeOutBack',
   }, 700)
   .add({
@@ -22,6 +22,14 @@ if (window.matchMedia("(max-width: 767px)").matches) {
   .add({
     begin: function () {
       document.querySelector('.navigation').style.backgroundColor = '#63FF49'}
+  }, 700)
+  .add({
+    targets: '.font',
+    color: '#000000'
+  }, 700)
+  .add({
+    targets: '.int',
+    color: '#000000'
   }, 700)
   .add({
     begin: function () {
