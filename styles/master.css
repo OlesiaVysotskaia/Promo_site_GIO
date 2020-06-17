@@ -7,6 +7,10 @@ body {
   background-color: black;
 }
 
+.nav_mobile {
+  display: none;
+}
+
 .int {
   color: #63FF49;
 }
@@ -59,6 +63,10 @@ nav a.is-active {
   background-color: black;
 }
 
+.nav-back-block {
+  display: none;
+}
+
 .navigation {
   height: 80px;
   z-index: 99;
@@ -107,9 +115,14 @@ hr {
 
 .first {
   margin-bottom: 220px;
+  position:relative;
 }
 .second {
   margin-bottom: 220px;
+  position:relative;
+}
+.third {
+  position: relative;
 }
 
 .content {
@@ -126,6 +139,7 @@ hr {
 
 .big_title {
   margin-bottom: 315px;
+  width: 1000px;
 }
 
 .serv_title {
@@ -172,7 +186,8 @@ footer {
 }
 
 .section {
-  margin-bottom: 68px
+  margin-bottom: 68px;
+  position:relative;
 }
 
 .tower {
@@ -243,9 +258,11 @@ footer {
 
 .poster_img {
   position: relative;
-  opacity: 100;
+  /* opacity: 100; */
   z-index: 77;
 }
+
+
 
 .poster {
   background-color: black;
@@ -308,6 +325,10 @@ footer {
   border: 1px solid white;
 }
 
+.poster_img.click {
+  display: none;
+}
+
 .mission_descr {
   margin-bottom: 66px;
   width: 1165px;
@@ -342,70 +363,70 @@ div.fifth-mission :first-child {
 #index-letter-title-1 {
   position: absolute;
   z-index: 88;
-  top: 140px;
+  top: 45px;
   left: 20px;
 }
 #index-letter-title-2 {
   position: absolute;
   z-index: 88;
-  top: 340px;
-  left: 20px;
+  top: 220px;
+  left: 65px;
 }
 
 #index-letter-desc-1 {
   position: absolute;
   z-index: 88;
-  top: 790px;
+  top: 680px;
   left: 84px;
 }
 
 #index-letter-desc-2 {
   position: absolute;
   z-index: 88;
-  top: 825px;
+  top: 700px;
   left: 414px;
 }
 
 #index-letter-history-1 {
   position: absolute;
   z-index: 88;
-  top: 1320px;
-  left: 104px;
+  top: 100px;
+  left: 85px;
 }
 
 #index-letter-history-2 {
   position: absolute;
   z-index: 88;
-  top: 1287px;
-  left: 395px;
+  top: 70px;
+  left: 375px;
 }
 
 #index-letter-poster-1 {
   position: absolute;
   z-index: 88;
-  top: 1488px;
-  left: 154px;
+  top: 80px;
+  left: 140px;
 }
 
 #index-letter-poster-2 {
   position: absolute;
   z-index: 88;
-  top: 1503px;
-  left: 314px;
+  top: 90px;
+  left: 300px;
 }
 
 #index-letter-mission {
   position: absolute;
   z-index: 88;
-  top: 1681px;
-  left: 189px;
+  top: 70px;
+  left: 170px;
 }
 
 #index-letter-adaptation {
   position: absolute;
   z-index: 88;
-  top: 2372px;
-  left: 140px;
+  top: 200px;
+  left: 120px;
 }
 
 #index-letter-adaptation {
@@ -524,7 +545,34 @@ div.fifth-mission :first-child {
   left: 170px;
 }
 
+@media (max-width: 1439px) {
+  .tower {
+    width: 75vw;
+  }
+  .block {
+    width: 1140px;
+  }
+  .big_title {
+    margin-bottom: 200px;
+  }
+  .fifth-history {
+    margin-bottom: 532px;
+  }
 
+
+  .posters {
+    width: 1340px;
+  }
+  .poster_img {
+    width: 23vw;
+  }
+  .poster_section {
+    width: 23vw;
+  }
+  .poster_descr {
+    font-size: 24px;
+  }
+}
 
 @media (max-width: 1365px) {
   .tower {
@@ -559,37 +607,70 @@ div.fifth-mission :first-child {
   .first-mission {
     margin-bottom: 70px;
   }
-  footer
-}
 
-@media (max-width: 1439px) {
-  .tower {
-    width: 75vw;
-  }
-  .block {
-    width: 1140px;
-  }
   .big_title {
-    margin-bottom: 200px;
-  }
-  .fifth-history {
-    margin-bottom: 532px;
+    width: 1000px;
+    line-height: 1.2;
+    margin-bottom: 160px;
   }
 
+  #index-letter-title-1 {
+    top: 55px;
+    left: 0px;
+    width: 40vw;
+  }
+  #index-letter-title-2 {
+    top: 250px;
+    left: 25px;
+    width: 30vw;
+  }
 
-  .posters {
-    width: 1340px;
+  #index-letter-desc-1 {
+    top: 600px;
+    left: 65px;
   }
-  .poster_img {
-    width: 23vw;
+
+  #index-letter-desc-2 {
+    top: 700px;
+    left: 414px;
   }
-  .poster_section {
-    width: 23vw;
+
+  #index-letter-history-1 {
+    top: 100px;
+    left: 85px;
   }
-  .poster_descr {
-    font-size: 24px;
+
+  #index-letter-history-2 {
+    top: 70px;
+    left: 375px;
+  }
+
+  #index-letter-poster-1 {
+    top: 80px;
+    left: 140px;
+  }
+
+  #index-letter-poster-2 {
+    top: 90px;
+    left: 300px;
+  }
+
+  #index-letter-mission {
+    top: 70px;
+    left: 170px;
+  }
+
+  #index-letter-adaptation {
+    top: 200px;
+    left: 120px;
+  }
+
+  #index-letter-adaptation {
+    top: 2372px;
+    left: 140px;
   }
 }
+
 
 @media (min-width: 1679px) {
 
@@ -764,20 +845,89 @@ div.fifth-mission :first-child {
     margin-bottom: 315px;
   }
   .third-mission {
-    margin-bottom: 515px;
+    margin-bottom: 420px;
+  }
+
+  .mission_descr {
+    width: 600px;
   }
 }
 
 @media (max-width: 767px) {
+
+  h1 {
+    font-size: 30px;
+  }
+  .poster_descr {
+    width: 335px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 18px;
+    width: 360px;
+  }
+  a {
+    font-size: 24px;
+  }
+  .link_html {
+    font-size: 30px;
+  }
+  .link_none {
+    font-size: 30px;
+  }
+  .news_line_second {
+    margin-bottom: 85px;
+  }
+
+  .big_title {
+    margin-bottom: 165px;
+  }
+
   .content {
-    top: 140px;
+    overflow: hidden;
+  }
+
+  .tower {
+    width: 180vw;
+    left: -70px;
+  }
+
+  .first {
+    margin-bottom: 190px;
+  }
+  .news_line {
+    margin-bottom: 60px;
+  }
+  .section {
+    margin-bottom: 60px;
+  }
+  .second {
+    margin-bottom: 175px;
+  }
+
+  footer {
+    margin-top: 85px;
+    height: 165px;
+    margin-left: 15px;
+    flex-direction: column;
+  }
+
+  .content {
+    top: 110px;
+  }
+  .block {
+    width: 360px;
   }
   .navigation {
-    height: 135px;
+    height: 90px;
   }
   .nav_mobile {
+    display: block;
     margin-left: 20px;
-    margin-top: 30px;
+    margin-top: 20px;
   }
   .nav_mobile-back {
     display: none;
@@ -804,7 +954,164 @@ div.fifth-mission :first-child {
     flex-direction: column;
     background-color: #63FF49;
   }
-  .int {
-    color: black;
+
+
+  .mission_descr {
+    margin-bottom: 66px;
+    width: 360px;
   }
+  .third-mission {
+    margin-bottom: 300px;
+  }
+  .book {
+    width: 90vw;
+  }
+
+
+  .posters_title, .posters_descr {
+    font-size: 30px;
+    width: 380px;
+  }
+  .poster_descr {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .posters {
+    width: 380px;
+  }
+  .poster_section {
+    width: 90vw;
+  }
+  .poster_img {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 413px) {
+  h1 {
+    font-size: 24px;
+  }
+  .poster_descr {
+    width: 335px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 14px;
+    width: 260px;
+  }
+  a {
+    font-size: 24px;
+  }
+  hr {
+    height: 2px;
+  }
+  footer {
+    margin-top: 60px;
+  }
+  .link_html {
+    font-size: 24px;
+  }
+  .link_none {
+    font-size: 24px;
+  }
+  .link_footer {
+    font-size: 18px;
+  }
+  .serv_title {
+    font-size: 24px;
+    margin-bottom: 50px;
+  }
+  .first-history {
+    margin-bottom: 270px;
+  }
+  .second-history {
+    margin-bottom: 256px;
+  }
+  .fifth-history {
+    margin-bottom: 320px;
+  }
+  .block {
+    width: 330px;
+  }
+  .history_descr {
+    width: 330px;
+    margin-bottom: 100px;
+  }
+
+  .news_line_second {
+    margin-bottom: 50px;
+  }
+  .second-history {
+    margin-bottom: 260px;
+  }
+
+
+  .third-mission {
+    margin-bottom: 315px;
+  }
+  .book {
+    width: 90vw;
+  }
+  .mission_descr {
+    width: 330px;
+  }
+  .first-mission {
+    margin-bottom: 100px;
+  }
+
+
+  .posters_title, .posters_descr {
+    font-size: 24px;
+    width: 340px;
+  }
+
+}
+
+@media (max-width: 374px) {
+
+  .tower {
+    width: 214vw;
+  }
+  .first-history {
+    margin-bottom: 120px;
+  }
+  .history_descr {
+    margin-bottom: 120px;
+  }
+  .fifth-history {
+    margin-bottom: 300px;
+  }
+  .block {
+    width: 280px;
+  }
+  .first-mission {
+    margin-bottom: 80px;
+  }
+  .second-mission {
+    margin-bottom: 215px;
+  }
+
+
+
+  .posters_title, .posters_descr {
+    font-size: 24px;
+    width: 280px;
+  }
+  .poster_descr {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  .posters {
+    width: 280px;
+  }
+  .poster_section {
+    width: 87vw;
+  }
+  .poster_img {
+    width: 87vw;
+  }
+
 }
