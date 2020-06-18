@@ -1264,7 +1264,7 @@ div.fifth-mission :first-child {
 
   .tower {
     width: 170vw;
-    left: 0px;
+    left: -50px;
   }
 
   .first {
@@ -1679,6 +1679,11 @@ div.fifth-mission :first-child {
     width: 280px;
   }
 
+  .tower {
+    width: 160vw;
+    left: 0px;
+  }
+
 
   .planets {
     top: 430px;
@@ -1904,7 +1909,8 @@ div.fifth-mission :first-child {
 @media (max-width: 374px) {
 
   .tower {
-    width: 195vw;
+    width: 190vw;
+    left: -30px;
   }
   .big_title {
     width: 280px;
