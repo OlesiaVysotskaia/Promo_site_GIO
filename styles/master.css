@@ -13,6 +13,7 @@ body {
 
 .int {
   color: #63FF49;
+  cursor: pointer;
 }
 
 h1, h2, a, p, li {
@@ -865,7 +866,7 @@ div.fifth-mission :first-child {
     z-index: 88;
     top: 280px;
     left: 240px;
-    width: 24vw;
+    width: 3vw;
   }
   #history-letter-desc-4 {
     position: absolute;
