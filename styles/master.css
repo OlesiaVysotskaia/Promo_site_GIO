@@ -35,7 +35,7 @@ h2 {
 p {
   font-size: 24px;
   font-family: 'Roboto', sans-serif;
-  width: 810px;
+  width: 760px;
 }
 a {
   font-size: 24px;
@@ -108,7 +108,7 @@ hr {
   position: relative;
   margin-bottom: 72px;
   background-color: black;
-  z-index: 101;
+  z-index: 90;
   width: 100%;
 }
 
@@ -138,6 +138,7 @@ hr {
 .block {
   margin-left: 20px;
   width: 1165px;
+  position: relative;
 }
 
 .big_title {
@@ -167,11 +168,13 @@ hr {
 
 footer {
   width: 827px;
+  position: relative;
+  z-index: 99;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-bottom: 20px;
   margin-top: 120px;
-  margin-left: 5px;
+  margin-left: 20px;
 }
 
 .link_footer {
@@ -197,7 +200,7 @@ footer {
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 100;
+  z-index: 88;
 }
 
 
@@ -217,7 +220,7 @@ footer {
 }
 .alien-hands {
   position: absolute;
-  top: 997px;
+  top: 1200px;
   left: -10px;
   z-index: 88;
 }
@@ -264,13 +267,20 @@ footer {
   /* opacity: 100; */
   z-index: 77;
 }
+.hide {
+  opacity: 0;
+}
 
 
 
 .poster {
-  background-color: black;
+  background-color: #63FF49;
   position: relative;
+  opacity: 100;
 }
+/* .poster1 {
+  opacity: 100;
+} */
 
 .img_desc {
   position: absolute;
@@ -278,7 +288,7 @@ footer {
   left: 20px;
   color: black;
   width: 300px;
-  display: none;
+  /* display: none; */
 }
 
 /* .posters_title {
@@ -334,7 +344,7 @@ footer {
 
 .mission_descr {
   margin-bottom: 66px;
-  width: 1165px;
+  width: 1030px;
 }
 
 .first-mission {
@@ -393,8 +403,8 @@ div.fifth-mission :first-child {
 #index-letter-history-1 {
   position: absolute;
   z-index: 88;
-  top: 100px;
-  left: 85px;
+  top: 50px;
+  left: 185px;
 }
 
 #index-letter-history-2 {
@@ -415,7 +425,7 @@ div.fifth-mission :first-child {
   position: absolute;
   z-index: 88;
   top: 90px;
-  left: 300px;
+  left: 450px;
 }
 
 #index-letter-mission {
@@ -428,15 +438,8 @@ div.fifth-mission :first-child {
 #index-letter-adaptation {
   position: absolute;
   z-index: 88;
-  top: 200px;
+  top: 190px;
   left: 120px;
-}
-
-#index-letter-adaptation {
-  position: absolute;
-  z-index: 88;
-  top: 2372px;
-  left: 140px;
 }
 
 
@@ -445,61 +448,61 @@ div.fifth-mission :first-child {
 #history-letter-title-1 {
   position: absolute;
   z-index: 88;
-  top: 197px;
+  top: 80px;
   left: 25px;
 }
 
 #history-letter-title-2 {
   position: absolute;
   z-index: 88;
-  top: 320px;
+  top: 200px;
   left: 650px;
 }
 
 #history-letter-title-3 {
   position: absolute;
   z-index: 88;
-  top: 1790px;
-  left: 292px;
+  top: -40px;
+  left: 240px;
 }
 
 #history-letter-title-4 {
   position: absolute;
   z-index: 88;
-  top: 2385px;
+  top: 85px;
   left: 204px;
 }
 
 #history-letter-title-5 {
   position: absolute;
   z-index: 88;
-  top: 2668px;
+  top: -40px;
   left: 26px;
 }
 
 #history-letter-desc-1 {
   position: absolute;
   z-index: 88;
-  top: 596px;
-  left: 154px;
+  top: 470px;
+  left: 270px;
 }
 #history-letter-desc-2 {
   position: absolute;
   z-index: 88;
-  top: 596px;
-  left: 407px;
+  top: 480px;
+  left: 530px;
 }
 #history-letter-desc-3 {
   position: absolute;
   z-index: 88;
-  top: 2100px;
-  left: 250px;
+  top: 230px;
+  left: 240px;
 }
 #history-letter-desc-4 {
   position: absolute;
   z-index: 88;
-  top: 2119px;
-  left: 356px;
+  top: 240px;
+  left: 460px;
 }
 
 
@@ -515,21 +518,21 @@ div.fifth-mission :first-child {
 #mission-letter-title-2 {
   position: absolute;
   z-index: 88;
-  top: 639px;
+  top: 120px;
   left: 314px;
 }
 
 #mission-letter-title-3 {
   position: absolute;
   z-index: 88;
-  top: 1220px;
+  top: 75px;
   left: 190px;
 }
 
 #mission-letter-title-4 {
   position: absolute;
   z-index: 88;
-  top: 1837px;
+  top: -50px;
   left: 108px;
 }
 
@@ -537,15 +540,15 @@ div.fifth-mission :first-child {
 #mission-letter-desc-1 {
   position: absolute;
   z-index: 88;
-  top: 320px;
+  top: 200px;
   left: 257px;
 }
 
 #mission-letter-desc-2 {
   position: absolute;
   z-index: 88;
-  top: 350px;
-  left: 170px;
+  top: 230px;
+  left: 150px;
 }
 
 @media (max-width: 1439px) {
@@ -579,7 +582,8 @@ div.fifth-mission :first-child {
 
 @media (max-width: 1365px) {
   .tower {
-    width: 75vw;
+    width: 84vw;
+    top: 40px;
   }
   .block {
     width: 1140px;
@@ -667,26 +671,21 @@ div.fifth-mission :first-child {
     top: 200px;
     left: 120px;
   }
-
-  #index-letter-adaptation {
-    top: 2372px;
-    left: 140px;
-  }
 }
 
 
 @media (min-width: 1679px) {
 
   h1 {
-    font-size: 96px;
+    font-size: 64px;
     font-family: 'Roboto', sans-serif;
   }
   p {
-    font-size: 36px;
-    width: 1150px;
+    font-size: 24px;
+    width: 900px;
   }
   nav a {
-    font-size: 48px;
+    font-size: 36px;
   }
   .nav {
     width: 900px;
@@ -697,27 +696,35 @@ div.fifth-mission :first-child {
     width: 1530px;
   }
   .big_title {
-    margin-bottom: 260px;
+    margin-bottom: 250px;
+    width: 1000px;
+  }
+  .img_desc {
+    left: 40px;
   }
   .link_html {
-    font-size: 64px;
+    font-size: 60px;
   }
   .serv_title {
-    font-size: 64px;
+    font-size: 60px;
     margin-bottom: 60px;
   }
   .link_none {
-    font-size: 64px;
+    font-size: 60px;
   }
   .news {
     font-size: 48px;
   }
   footer {
-    width: 1320px;
-    margin-left: 15px;
+    width: 1000px;
+    margin-left: 40px;
   }
   .link_footer {
-    font-size: 36px;
+    font-size: 24px;
+  }
+
+  .first-mission {
+    margin-bottom: 300px;
   }
 
 
@@ -744,6 +751,135 @@ div.fifth-mission :first-child {
   }
   .forth-history {
     margin-bottom: 230px;
+  }
+
+
+
+  #index-letter-desc-1 {
+    position: absolute;
+    z-index: 88;
+    top: 610px;
+    left: 64px;
+  }
+
+  #index-letter-desc-2 {
+    position: absolute;
+    z-index: 88;
+    top: 640px;
+    left: 340px;
+  }
+
+  #index-letter-history-1 {
+    position: absolute;
+    z-index: 88;
+    top: 110px;
+    left: 0px;
+  }
+
+  #index-letter-history-2 {
+    position: absolute;
+    z-index: 88;
+    top: 70px;
+    left: 375px;
+  }
+
+  #index-letter-poster-1 {
+    position: absolute;
+    z-index: 88;
+    top: 80px;
+    left: 140px;
+  }
+
+  #index-letter-poster-2 {
+    position: absolute;
+    z-index: 88;
+    top: 90px;
+    left: 450px;
+  }
+
+  #index-letter-mission {
+    position: absolute;
+    z-index: 88;
+    top: 100px;
+    left: 300px;
+  }
+
+  #index-letter-adaptation {
+    position: absolute;
+    z-index: 88;
+    top: 230px;
+    left: 150px;
+  }
+
+
+
+  #history-letter-title-1 {
+    position: absolute;
+    z-index: 88;
+    top: 80px;
+    left: 25px;
+  }
+
+  #history-letter-title-2 {
+    position: absolute;
+    z-index: 88;
+    top: 220px;
+    left: 160px;
+  }
+
+  #history-letter-title-3 {
+    position: absolute;
+    z-index: 88;
+    top: -40px;
+    left: 240px;
+  }
+
+  #history-letter-title-4 {
+    position: absolute;
+    z-index: 88;
+    top: 85px;
+    left: 204px;
+  }
+
+  #history-letter-title-5 {
+    position: absolute;
+    z-index: 88;
+    top: -40px;
+    left: 26px;
+  }
+
+  #history-letter-desc-1 {
+    position: absolute;
+    z-index: 88;
+    top: 520px;
+    left: 20px;
+  }
+  #history-letter-desc-2 {
+    position: absolute;
+    z-index: 88;
+    top: 530px;
+    left: 280px;
+  }
+  #history-letter-desc-3 {
+    position: absolute;
+    z-index: 88;
+    top: 280px;
+    left: 240px;
+    width: 24vw;
+  }
+  #history-letter-desc-4 {
+    position: absolute;
+    z-index: 88;
+    top: 320px;
+    left: 260px;
+  }
+
+
+  #mission-letter-title-3 {
+    position: absolute;
+    z-index: 88;
+    top: 5px;
+    left: 790px;
   }
 
 }
@@ -780,11 +916,14 @@ div.fifth-mission :first-child {
   .big_title {
     margin-bottom: 210px;
   }
+  .big_title {
+    width: 560px;
+  }
   .first {
     margin-bottom: 80px;
   }
   .second {
-    margin-bottom: 250px;
+    margin-bottom: 100px;
   }
   .descr {
     margin-top: 10px;
@@ -848,11 +987,237 @@ div.fifth-mission :first-child {
     margin-bottom: 315px;
   }
   .third-mission {
-    margin-bottom: 420px;
+    margin-bottom: 520px;
   }
 
   .mission_descr {
     width: 600px;
+  }
+
+  .img_desc {
+    font-size: 18px;
+    left: 20px;
+    width: 200px;
+  }
+
+
+  .planets {
+    top: 420px;
+    width: 120vw;
+  }
+
+  .pluto {
+    position: absolute;
+    top: 480px;
+    right: -100px;
+    z-index: 88;
+    width: 100vw;
+  }
+  .alien-hands {
+    position: absolute;
+    top: 1320px;
+    left: 0px;
+    z-index: 88;
+    width: 120vw;
+  }
+  .president {
+    width: 70vw;
+    bottom: 50px;
+  }
+
+
+  #index-letter-title-1 {
+    position: absolute;
+    z-index: 88;
+    top: 45px;
+    left: 0px;
+    width: 35vw;
+  }
+  #index-letter-title-2 {
+    position: absolute;
+    z-index: 88;
+    top: 150px;
+    left: 30px;
+    width: 30vw;
+  }
+
+  #index-letter-desc-1 {
+    position: absolute;
+    z-index: 88;
+    top: 450px;
+    left: 65px;
+    width: 17vw;
+  }
+
+  #index-letter-desc-2 {
+    position: absolute;
+    z-index: 88;
+    top: 500px;
+    left: 120px;
+    width: 17vw;
+  }
+
+  #index-letter-history-1 {
+    position: absolute;
+    z-index: 88;
+    top: 70px;
+    left: 275px;
+    width: 12vw;
+  }
+
+  #index-letter-history-2 {
+    position: absolute;
+    z-index: 88;
+    top: 30px;
+    left: 375px;
+    width: 17vw;
+  }
+
+  #index-letter-poster-1 {
+    position: absolute;
+    z-index: 88;
+    top: 40px;
+    left: 140px;
+    width: 10vw;
+  }
+
+  #index-letter-poster-2 {
+    position: absolute;
+    z-index: 88;
+    top: 80px;
+    left: 120px;
+    width: 17vw;
+  }
+
+  #index-letter-mission {
+    position: absolute;
+    z-index: 88;
+    top: 40px;
+    left: 170px;
+    width: 10vw;
+  }
+
+  #index-letter-adaptation {
+    position: absolute;
+    z-index: 88;
+    top: 190px;
+    left: 100px;
+    width: 17vw;
+  }
+
+
+
+  #history-letter-title-1 {
+    position: absolute;
+    z-index: 88;
+    top: 80px;
+    left: 185px;
+    width: 50vw;
+  }
+
+  #history-letter-title-2 {
+    position: absolute;
+    z-index: 88;
+    top: 190px;
+    left: 240px;
+    width: 25vw;
+  }
+
+  #history-letter-title-3 {
+    position: absolute;
+    z-index: 88;
+    top: -40px;
+    left: 140px;
+    width: 40vw;
+  }
+
+  #history-letter-title-4 {
+    position: absolute;
+    z-index: 88;
+    top: 45px;
+    left: 204px;
+    width: 30vw;
+  }
+
+  #history-letter-title-5 {
+    position: absolute;
+    z-index: 88;
+    top: -40px;
+    left: 0px;
+    width: 25vw;
+  }
+
+  #history-letter-desc-1 {
+    position: absolute;
+    z-index: 88;
+    top: 450px;
+    left: 30px;
+  }
+  #history-letter-desc-2 {
+    position: absolute;
+    z-index: 88;
+    top: 460px;
+    left: 300px;
+  }
+  #history-letter-desc-3 {
+    position: absolute;
+    z-index: 88;
+    top: 240px;
+    left: 240px;
+  }
+  #history-letter-desc-4 {
+    position: absolute;
+    z-index: 88;
+    top: 280px;
+    left: 0px;
+  }
+
+
+  #mission-letter-title-1 {
+    position: absolute;
+    z-index: 88;
+    top: 90px;
+    left: 320px;
+    width: 30vw;
+  }
+
+  #mission-letter-title-2 {
+    position: absolute;
+    z-index: 88;
+    top: 100px;
+    left: 200px;
+    width: 20vw;
+  }
+
+  #mission-letter-title-3 {
+    position: absolute;
+    z-index: 88;
+    top: 25px;
+    left: 250px;
+    width: 30vw;
+  }
+
+  #mission-letter-title-4 {
+    position: absolute;
+    z-index: 88;
+    top: -50px;
+    left: 10px;
+    width: 25vw;
+  }
+
+
+  #mission-letter-desc-1 {
+    position: absolute;
+    z-index: 88;
+    top: 140px;
+    left: 257px;
+  }
+
+  #mission-letter-desc-2 {
+    position: absolute;
+    z-index: 88;
+    top: 180px;
+    left: 320px;
   }
 }
 
@@ -870,7 +1235,7 @@ div.fifth-mission :first-child {
 
   p {
     font-size: 18px;
-    width: 360px;
+    width: 330px;
   }
   a {
     font-size: 24px;
@@ -886,7 +1251,11 @@ div.fifth-mission :first-child {
   }
 
   .big_title {
-    margin-bottom: 165px;
+    margin-bottom: 150px;
+  }
+
+  .fifth-history {
+    margin-bottom: 432px;
   }
 
   .content {
@@ -894,12 +1263,15 @@ div.fifth-mission :first-child {
   }
 
   .tower {
-    width: 180vw;
-    left: -70px;
+    width: 170vw;
+    left: 0px;
   }
 
   .first {
     margin-bottom: 190px;
+  }
+  .big_title {
+    width: 200px;
   }
   .news_line {
     margin-bottom: 60px;
@@ -964,10 +1336,13 @@ div.fifth-mission :first-child {
     width: 360px;
   }
   .third-mission {
-    margin-bottom: 300px;
+    margin-bottom: 250px;
   }
   .book {
     width: 90vw;
+  }
+  .second-history {
+    margin-bottom: 360px;
   }
 
 
@@ -988,6 +1363,232 @@ div.fifth-mission :first-child {
   .poster_img {
     width: 90vw;
   }
+
+  .img_desc {
+    font-size: 18px;
+    left: 20px;
+    width: 300px;
+  }
+
+
+  .planets {
+    top: 430px;
+    width: 150vw;
+  }
+
+  .alien-hands {
+    position: absolute;
+    top: 1320px;
+    left: 0px;
+    z-index: 88;
+    width: 120vw;
+  }
+
+  .president {
+    width: 90vw;
+    bottom: 200px;
+  }
+
+
+  #index-letter-title-1 {
+    position: absolute;
+    z-index: 88;
+    top: 45px;
+    left: 0px;
+    width: 55vw;
+  }
+  #index-letter-title-2 {
+    position: absolute;
+    z-index: 88;
+    top: 208px;
+    left: 20px;
+    width: 55vw;
+  }
+
+  #index-letter-desc-1 {
+    position: absolute;
+    z-index: 88;
+    top: 460px;
+    left: 45px;
+    width: 25vw;
+  }
+
+  #index-letter-desc-2 {
+    position: absolute;
+    z-index: 88;
+    top: 510px;
+    left: 40px;
+    width: 30vw;
+  }
+
+  #index-letter-history-1 {
+    position: absolute;
+    z-index: 88;
+    top: 55px;
+    left: 5px;
+    width: 17vw;
+  }
+
+  #index-letter-history-2 {
+    position: absolute;
+    z-index: 88;
+    top: 70px;
+    left: 75px;
+    width: 25vw;
+  }
+
+  #index-letter-poster-1 {
+    position: absolute;
+    z-index: 88;
+    top: 30px;
+    left: 100px;
+    width: 15vw;
+  }
+
+  #index-letter-poster-2 {
+    position: absolute;
+    z-index: 88;
+    top: 70px;
+    left: 220px;
+    width: 22vw;
+  }
+
+  #index-letter-mission {
+    position: absolute;
+    z-index: 88;
+    top: 35px;
+    left: 130px;
+    width: 15vw;
+  }
+
+  #index-letter-adaptation {
+    position: absolute;
+    z-index: 88;
+    top: 170px;
+    left: 80px;
+    width: 30vw;
+  }
+
+
+  #history-letter-title-1 {
+    position: absolute;
+    z-index: 88;
+    top: 180px;
+    left: 0px;
+    width: 60vw;
+  }
+
+  #history-letter-title-2 {
+    position: absolute;
+    z-index: 88;
+    top: 360px;
+    left: 90px;
+    width: 30vw;
+  }
+
+  #history-letter-title-3 {
+    position: absolute;
+    z-index: 88;
+    top: 0px;
+    left: 70px;
+    width: 55vw;
+  }
+
+  #history-letter-title-4 {
+    position: absolute;
+    z-index: 88;
+    top: 140px;
+    left: 130px;
+    width: 40vw;
+  }
+
+  #history-letter-title-5 {
+    position: absolute;
+    z-index: 88;
+    top: -15px;
+    left: 0px;
+    width: 25vw;
+  }
+
+  #history-letter-desc-1 {
+    position: absolute;
+    z-index: 88;
+    top: 650px;
+    left: 90px;
+    width: 35vw;
+  }
+  #history-letter-desc-2 {
+    position: absolute;
+    z-index: 88;
+    top: 680px;
+    left: 30px;
+    width: 17vw;
+  }
+  #history-letter-desc-3 {
+    position: absolute;
+    z-index: 88;
+    top: 290px;
+    left: 165px;
+    width: 12vw;
+  }
+  #history-letter-desc-4 {
+    position: absolute;
+    z-index: 88;
+    top: 350px;
+    left: 50px;
+    width: 30vw;
+  }
+
+
+
+  #mission-letter-title-1 {
+    position: absolute;
+    z-index: 88;
+    top: 120px;
+    left: 120px;
+    width: 45vw;
+  }
+
+  #mission-letter-title-2 {
+    position: absolute;
+    z-index: 88;
+    top: 140px;
+    left: 190px;
+    width: 26vw;
+  }
+
+  #mission-letter-title-3 {
+    position: absolute;
+    z-index: 88;
+    top: 25px;
+    left: 250px;
+    width: 30vw;
+  }
+
+  #mission-letter-title-4 {
+    position: absolute;
+    z-index: 88;
+    top: -30px;
+    left: 60px;
+    width: 25vw;
+  }
+
+
+  #mission-letter-desc-1 {
+    position: absolute;
+    z-index: 88;
+    top: 240px;
+    left: 180px;
+    width: 20vw;
+  }
+
+  #mission-letter-desc-2 {
+    position: absolute;
+    z-index: 88;
+    top: 280px;
+    left: 110px;
+    width: 13vw
+  }
 }
 
 @media (max-width: 413px) {
@@ -1003,7 +1604,7 @@ div.fifth-mission :first-child {
 
   p {
     font-size: 14px;
-    width: 260px;
+    width: 280px;
   }
   a {
     font-size: 24px;
@@ -1013,6 +1614,9 @@ div.fifth-mission :first-child {
   }
   footer {
     margin-top: 60px;
+  }
+  .big_title {
+    width: 360px;
   }
   .link_html {
     font-size: 24px;
@@ -1040,7 +1644,7 @@ div.fifth-mission :first-child {
     width: 330px;
   }
   .history_descr {
-    width: 330px;
+    width: 280px;
     margin-bottom: 100px;
   }
 
@@ -1053,7 +1657,7 @@ div.fifth-mission :first-child {
 
 
   .third-mission {
-    margin-bottom: 315px;
+    margin-bottom: 215px;
   }
   .book {
     width: 90vw;
@@ -1071,12 +1675,239 @@ div.fifth-mission :first-child {
     width: 340px;
   }
 
+  .descr {
+    width: 280px;
+  }
+
+
+  .planets {
+    top: 430px;
+    width: 150vw;
+  }
+
+  .pluto {
+    width: 90vw;
+    right: -80px;
+  }
+
+  .alien-hands {
+    position: absolute;
+    top: 940px;
+    left: 0px;
+    z-index: 88;
+    width: 110vw;
+  }
+
+  #index-letter-title-1 {
+    position: absolute;
+    z-index: 88;
+    top: 40px;
+    left: 0px;
+    width: 50vw;
+  }
+  #index-letter-title-2 {
+    position: absolute;
+    z-index: 88;
+    top: 120px;
+    left: 0px;
+    width: 45vw;
+  }
+
+  #index-letter-desc-1 {
+    position: absolute;
+    z-index: 88;
+    top: 330px;
+    left: 45px;
+    width: 25vw;
+  }
+
+  #index-letter-desc-2 {
+    position: absolute;
+    z-index: 88;
+    top: 380px;
+    left: 20px;
+    width: 30vw;
+  }
+
+  #index-letter-history-1 {
+    position: absolute;
+    z-index: 88;
+    top: 40px;
+    left: 5px;
+    width: 17vw;
+  }
+
+  #index-letter-history-2 {
+    position: absolute;
+    z-index: 88;
+    top: 60px;
+    left: 65px;
+    width: 25vw;
+  }
+
+  #index-letter-poster-1 {
+    position: absolute;
+    z-index: 88;
+    top: 30px;
+    left: 80px;
+    width: 15vw;
+  }
+
+  #index-letter-poster-2 {
+    position: absolute;
+    z-index: 88;
+    top: 50px;
+    left: 170px;
+    width: 22vw;
+  }
+
+  #index-letter-mission {
+    position: absolute;
+    z-index: 88;
+    top: 25px;
+    left: 100px;
+    width: 15vw;
+  }
+
+  #index-letter-adaptation {
+    position: absolute;
+    z-index: 88;
+    top: 150px;
+    left: 60px;
+    width: 30vw;
+  }
+
+
+
+  #history-letter-title-1 {
+    position: absolute;
+    z-index: 88;
+    top: 130px;
+    left: 0px;
+    width: 53vw;
+  }
+
+  #history-letter-title-2 {
+    position: absolute;
+    z-index: 88;
+    top: 260px;
+    left: 80px;
+    width: 27vw;
+  }
+
+  #history-letter-title-3 {
+    position: absolute;
+    z-index: 88;
+    top: 0px;
+    left: 70px;
+    width: 50vw;
+  }
+
+  #history-letter-title-4 {
+    position: absolute;
+    z-index: 88;
+    top: 100px;
+    left: 20px;
+    width: 40vw;
+  }
+
+  #history-letter-title-5 {
+    position: absolute;
+    z-index: 88;
+    top: -20px;
+    left: 0px;
+    width: 25vw;
+  }
+
+  #history-letter-desc-1 {
+    position: absolute;
+    z-index: 88;
+    top: 480px;
+    left: 20px;
+    width: 35vw;
+  }
+  #history-letter-desc-2 {
+    position: absolute;
+    z-index: 88;
+    top: 490px;
+    left: 170px;
+    width: 17vw;
+  }
+  #history-letter-desc-3 {
+    position: absolute;
+    z-index: 88;
+    top: 210px;
+    left: 125px;
+    width: 12vw;
+  }
+  #history-letter-desc-4 {
+    position: absolute;
+    z-index: 88;
+    top: 250px;
+    left: 150px;
+    width: 30vw;
+  }
+
+
+
+  #mission-letter-title-1 {
+    position: absolute;
+    z-index: 88;
+    top: 115px;
+    left: 120px;
+    width: 45vw;
+  }
+
+  #mission-letter-title-2 {
+    position: absolute;
+    z-index: 88;
+    top: 120px;
+    left: 140px;
+    width: 26vw;
+  }
+
+  #mission-letter-title-3 {
+    position: absolute;
+    z-index: 88;
+    top: 90px;
+    left: 90px;
+    width: 35vw;
+  }
+
+  #mission-letter-title-4 {
+    position: absolute;
+    z-index: 88;
+    top: -30px;
+    left: 50px;
+    width: 25vw;
+  }
+
+
+  #mission-letter-desc-1 {
+    position: absolute;
+    z-index: 88;
+    top: 200px;
+    left: 150px;
+    width: 20vw;
+  }
+
+  #mission-letter-desc-2 {
+    position: absolute;
+    z-index: 88;
+    top: 240px;
+    left: 80px;
+    width: 13vw
+  }
+
 }
 
 @media (max-width: 374px) {
 
   .tower {
-    width: 214vw;
+    width: 195vw;
+  }
+  .big_title {
+    width: 280px;
   }
   .first-history {
     margin-bottom: 120px;
@@ -1115,6 +1946,234 @@ div.fifth-mission :first-child {
   }
   .poster_img {
     width: 87vw;
+  }
+
+  .descr {
+    width: 200px;
+  }
+
+  .img_desc {
+    font-size: 18px;
+    left: 20px;
+    width: 240px;
+  }
+
+  .second {
+    margin-bottom: 100px;
+  }
+
+  .alien-hands {
+    position: absolute;
+    top: 860px;
+    left: 0px;
+    z-index: 88;
+    width: 110vw;
+  }
+
+  .pluto {
+    top: 400px;
+  }
+
+
+  #index-letter-title-1 {
+    position: absolute;
+    z-index: 88;
+    top: 40px;
+    left: 0px;
+    width: 50vw;
+  }
+  #index-letter-title-2 {
+    position: absolute;
+    z-index: 88;
+    top: 160px;
+    left: 0px;
+    width: 45vw;
+  }
+
+  #index-letter-desc-1 {
+    position: absolute;
+    z-index: 88;
+    top: 360px;
+    left: 40px;
+    width: 25vw;
+  }
+
+  #index-letter-desc-2 {
+    position: absolute;
+    z-index: 88;
+    top: 400px;
+    left: 30px;
+    width: 30vw;
+  }
+
+  #index-letter-history-1 {
+    position: absolute;
+    z-index: 88;
+    top: 50px;
+    left: 55px;
+    width: 17vw;
+  }
+
+  #index-letter-history-2 {
+    position: absolute;
+    z-index: 88;
+    top: 70px;
+    left: 5px;
+    width: 25vw;
+  }
+
+  #index-letter-poster-1 {
+    position: absolute;
+    z-index: 88;
+    top: 30px;
+    left: 80px;
+    width: 15vw;
+  }
+
+  #index-letter-poster-2 {
+    position: absolute;
+    z-index: 88;
+    top: 70px;
+    left: 70px;
+    width: 22vw;
+  }
+
+  #index-letter-mission {
+    position: absolute;
+    z-index: 88;
+    top: 35px;
+    left: 100px;
+    width: 15vw;
+  }
+
+  #index-letter-adaptation {
+    position: absolute;
+    z-index: 88;
+    top: 150px;
+    left: 60px;
+    width: 30vw;
+  }
+
+
+
+  #history-letter-title-1 {
+    position: absolute;
+    z-index: 88;
+    top: 155px;
+    left: 0px;
+    width: 60vw;
+  }
+
+  #history-letter-title-2 {
+    position: absolute;
+    z-index: 88;
+    top: 290px;
+    left: 80px;
+    width: 30vw;
+  }
+
+  #history-letter-title-3 {
+    position: absolute;
+    z-index: 88;
+    top: 0px;
+    left: 70px;
+    width: 60vw;
+  }
+
+  #history-letter-title-4 {
+    position: absolute;
+    z-index: 88;
+    top: 130px;
+    left: 20px;
+    width: 50vw;
+  }
+
+  #history-letter-title-5 {
+    position: absolute;
+    z-index: 88;
+    top: -20px;
+    left: 0px;
+    width: 35vw;
+  }
+
+  #history-letter-desc-1 {
+    position: absolute;
+    z-index: 88;
+    top: 525px;
+    left: 20px;
+    width: 35vw;
+  }
+  #history-letter-desc-2 {
+    position: absolute;
+    z-index: 88;
+    top: 535px;
+    left: 170px;
+    width: 17vw;
+  }
+  #history-letter-desc-3 {
+    position: absolute;
+    z-index: 88;
+    top: 230px;
+    left: 125px;
+    width: 12vw;
+  }
+  #history-letter-desc-4 {
+    position: absolute;
+    z-index: 88;
+    top: 270px;
+    left: 150px;
+    width: 35vw;
+  }
+
+
+
+  #mission-letter-title-1 {
+    position: absolute;
+    z-index: 88;
+    top: 120px;
+    left: 120px;
+    width: 45vw;
+  }
+
+  #mission-letter-title-2 {
+    position: absolute;
+    z-index: 88;
+    top: 120px;
+    left: 140px;
+    width: 26vw;
+  }
+
+  #mission-letter-title-3 {
+    position: absolute;
+    z-index: 88;
+    top: 100px;
+    left: 90px;
+    width: 45vw;
+  }
+
+  #mission-letter-title-4 {
+    position: absolute;
+    z-index: 88;
+    top: -20px;
+    left: 50px;
+    width: 25vw;
+  }
+
+
+  #mission-letter-desc-1 {
+    position: absolute;
+    z-index: 88;
+    top: 200px;
+    left: 150px;
+    width: 20vw;
+  }
+
+  #mission-letter-desc-2 {
+    position: absolute;
+    z-index: 88;
+    top: 240px;
+    left: 80px;
+    width: 13vw
   }
 
 }
